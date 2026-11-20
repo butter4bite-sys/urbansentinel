@@ -1,0 +1,13 @@
+Urban Sentinel — Weather backup update (2026-11-02)
+
+• Kept air temperature (2 metres above ground). No ground-surface temperatures are substituted.
+• Added MET Norway Locationforecast 2.0 compact as no-key backup when Open-Meteo Forecast API fails.
+• Home comparison and City Intelligence now load weather independently for both selected cities.
+• Temperature Map tries Open-Meteo batches first, then a limited number of MET Norway city requests to respect free-service traffic; selected cities can be checked individually.
+• Added 15-minute successful-result caching, up to 24-hour clearly marked last-known weather readings, source labels and weather timestamps.
+• When MET Norway is used: humidity and wind are displayed; wind converted from m/s to km/h; precipitation is labelled as next-hour forecast; apparent temperature remains unavailable.
+• AQI remains Open-Meteo/CAMS US AQI; temperature history requires Open-Meteo and is not invented when unavailable.
+• The Intelligence Explorer remains removed; 580 listed cities, existing tabs, projects and feedback remain.
+• Attribution: Norwegian Meteorological Institute (MET Norway), CC BY 4.0. See https://api.met.no/doc/TermsOfService.
+
+Deployment: Upload the complete ZIP to Netlify. For higher website traffic, MET Norway requires a caching proxy instead of many direct browser requests.

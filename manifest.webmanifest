@@ -1,0 +1,16 @@
+{
+  "name": "Urban Sentinel",
+  "short_name": "Urban Sentinel",
+  "description": "Your property, climate insights and interactive 3D building simulator.",
+  "id": "./index.html",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#092b2b",
+  "theme_color": "#092b2b",
+  "orientation": "any",
+  "icons": [
+    {"src":"assets/icons/urban-sentinel-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/urban-sentinel-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

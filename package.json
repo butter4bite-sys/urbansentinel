@@ -1,0 +1,9 @@
+{
+  "name": "urban-sentinel-website",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/verify.mjs && node tests/dom-smoke.mjs && node tests/temperature-regression.mjs && node tests/aqi-regression.mjs && node tests/weather-fallback-regression.mjs && node tests/urban-v4-regression.mjs && node tests/sparta-science.mjs && node tests/house-climate-regression.mjs && node tests/referral-regression.mjs && node tests/indoor-regression.mjs && node tests/immersive-room-regression.mjs && node tests/3d-simulation-regression.mjs && node tests/judge-ready-regression.mjs"
+  }
+}
